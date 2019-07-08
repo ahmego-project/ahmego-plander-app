@@ -10,11 +10,13 @@ import {
   View,
   StatusBar
 } from 'react-native';
+import Calendar from '../components/Calendar';
 
 export default class HomeScreen extends Component{
     render() {
         return (
             <View style={styles.container}>
+                <Calendar></Calendar>
                 <ScrollView
                     style={styles.container}
                 >   

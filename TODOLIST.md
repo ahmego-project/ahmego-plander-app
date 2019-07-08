@@ -8,6 +8,7 @@
     - 모든 Request에는 서버가 발급한 JWT Token 이 있어야지만 정상작동하도록 작업 및 테스트
 - 메인 페이지 작업
     - 캘린더 컴포넌트 작업 
+        - 참고 : https://github.com/wix/react-native-calendars
     - 매출입력 컴포넌트 작업
     - 매출정보 조회 컴포넌트 작업
 - 그래프 페이지 작업
