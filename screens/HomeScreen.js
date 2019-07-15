@@ -15,15 +15,19 @@ import Calendar from '../components/Calendar';
 export default class HomeScreen extends Component{
     render() {
         return (
-            <View style={styles.container}>
-                <Calendar></Calendar>
-                <ScrollView
-                    style={styles.container}
+            <ScrollView style={styles.container}>
+                <View 
+                    style={styles.calendar}
+                >
+                    <Calendar></Calendar>
+                </View>
+                <View
+                    style={styles.salesInfoDetail}
                 >   
                     <Text style={styles.getStartedText}>Home 화면</Text>
                     <Text style={styles.getStartedText}>Hello world Bangshinchul !!</Text>
-                </ScrollView>
-            </View>
+                </View>
+            </ScrollView>
         )
     }
 }
@@ -33,9 +37,18 @@ HomeScreen.navigationOptions = {
 }
 
 const styles = StyleSheet.create({
+    calendar: {
+        flex: 1,
+        backgroundColor: '#000',
+    },
     container: {
         flex: 1,
         backgroundColor: '#fff',
+    },
+    salesInfoDetail: {
+        flex: 1,
+        color: '#fff',
+        backgroundColor: 'gray',
     },
     contentContainer: {
         paddingTop: 30,

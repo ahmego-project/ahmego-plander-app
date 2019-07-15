@@ -1,5 +1,8 @@
 ### CHANGE LOG
 
+<b>2019.07.15</b>
+- IOS 및 ANDROID 상단 레이아웃 Style 작업 (아이폰X 노치디자인) 
+***
 <b>2019.07.08</b>
 - Calendar 컴포넌트 생성 및 HomeScreen에 컴포넌트 삽입 작업
 ***

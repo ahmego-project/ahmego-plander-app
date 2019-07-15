@@ -26,6 +26,7 @@ export default class GraphScreen extends Component{
 };
 
 GraphScreen.navigationOptions = {
+    header: null,
     title: 'Graph'
 };
 

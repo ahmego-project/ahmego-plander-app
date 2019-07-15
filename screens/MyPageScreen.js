@@ -26,6 +26,7 @@ export default class MyPageScreen extends Component{
 };
 
 MyPageScreen.navigationOptions = {
+    header: null,
     title: 'MyPage'
 };
 

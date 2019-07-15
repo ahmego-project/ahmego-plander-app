@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Calendar } from 'react-native-calendars';
-import { Text, ScrollView, View, StyleSheet, Button,StatusBar } from 'react-native';
+import { Platform,Text, ScrollView, View, StyleSheet, Button,StatusBar } from 'react-native';
 
 export default class CalendarScreen extends Component {
     constructor(props) {
@@ -11,16 +11,16 @@ export default class CalendarScreen extends Component {
 
     render() {
         return (
-          <ScrollView style={styles.container}>
+          <View style={styles.container}
+          >
             <StatusBar hidden={true} />
-            <Text style={styles.text}>Calendar with selectable date and arrows</Text>
             <Calendar
               onDayPress={this.onDayPress}
               style={styles.calendar}
               hideExtraDays
               markedDates={{[this.state.selected]: {selected: true, disableTouchEvent: true, selectedDotColor: 'orange'}}}
             />
-          </ScrollView>
+          </View>
         );
     }
     
@@ -47,6 +47,6 @@ const styles = StyleSheet.create({
     },
     container: {
       flex: 1,
-      backgroundColor: 'gray'
-    }
+      backgroundColor: 'gray',
+    },
 });
